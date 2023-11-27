@@ -1,7 +1,7 @@
 body {
     background-color: black;
     margin: 0;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .sidenav {
@@ -12,6 +12,7 @@ body {
     top: 0;
     left: 0;
     background-color: black;
+    opacity: 0.75;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -30,9 +31,26 @@ body {
     color: #818181;
 }
 
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 30px;
+}
+
 .burger-container {
     cursor: pointer;
     padding: 15px;
+}
+
+/* Add this style to hide the burger when the side menu is open */
+.burger-container.open .burger-bar {
+    display: none;
+}
+
+/* Add this style to show the 'x' close button when the side menu is open */
+.burger-container.open .close-btn {
+    display: block;
 }
 
 .burger-bar {
@@ -41,7 +59,17 @@ body {
     background-color: white;
     margin: 6px 0;
     transition: 0.4s;
+    display: block; /* Add this line to override the display property */
 }
+
+.close-btn {
+    display: none; /* Add this line to hide the close button initially */
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 30px;
+}
+
 
 .home {
     background-image: url(/resources/media/Apple-MacBook-Pro-2up-231030_Full-Bleed-Image.jpg.jpg);
@@ -57,4 +85,8 @@ body {
 .home h1 {
     color: white;
     font-size: 80px;
+}
+
+.what {
+    color: white;
 }
