@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #818181;
+}
+
+.burger-container {
+    cursor: pointer;
+    padding: 15px;
+}
+
+.burger-bar {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.home {
+    background-image: url(/resources/media/Apple-MacBook-Pro-2up-231030_Full-Bleed-Image.jpg.jpg);
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding-top: 10px;
+}
+
+.home h1 {
+    color: white;
+    font-size: 80px;
+}
