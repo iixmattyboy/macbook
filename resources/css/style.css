@@ -73,6 +73,7 @@ body {
 
 .home {
     background-image: url(/resources/media/Apple-MacBook-Pro-2up-231030_Full-Bleed-Image.jpg.jpg);
+    background-repeat: no-repeat;
     height: 800px;
     width: 100%;
     display: flex;
@@ -88,5 +89,14 @@ body {
 }
 
 .what {
+    background-image: url(/resources/media/Apple-m3-chips.jpg);
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding-top: 10px;
     color: white;
 }
