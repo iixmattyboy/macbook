@@ -72,7 +72,7 @@ body {
 }
 
 .home {
-    background-image: url(./resources/media/Apple-MacBook-Pro-2up-231030_Full-Bleed-Image.jpg.jpg);
+    background-image: url(/resources/media/Apple-MacBook-Pro-2up-231030_Full-Bleed-Image.jpg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     height: 800px;
@@ -84,13 +84,16 @@ body {
     padding-top: 10px;
 }
 
-.home h1 {
+.hero {
     color: white;
-    font-size: 80px;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
 }
 
 .what {
-    background-image: url(./resources/media/Apple-m3-chips.jpg);
+    background-image: url(/resources/media/Apple-m3-chips.jpg);
     background-repeat: no-repeat;
     background-position: center;
     height: 800px;
@@ -98,7 +101,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.25);
     padding-top: 10px;
     color: white;
+}
+
+
+.what-information {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
 }
