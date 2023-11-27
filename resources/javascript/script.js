@@ -10,3 +10,11 @@ function toggleNav() {
         burgerContainer.classList.add('open');
     }
 }
+
+function closeNav() {
+    var sideNav = document.getElementById('sideNav');
+    var burgerContainer = document.querySelector('.burger-container');
+
+    sideNav.style.width = '0';
+    burgerContainer.classList.remove('open');
+}
