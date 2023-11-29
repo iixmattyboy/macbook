@@ -134,6 +134,53 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* Existing styles... */
+
+.where-to-buy {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding-top: 10px;
+    color: white;
+}
+
+.shop-1,
+.shop-2,
+.shop-3 {
+    text-align: center;
+    width: 250px;
+}
+
+.where-to-buy img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+/* Media query for smaller devices */
+@media screen and (max-width: 600px) {
+    .where-to-buy {
+        flex-direction: column; /* Change flex direction to column for stacking on smaller screens */
+        height: auto; /* Let the content determine the height */
+    }
+
+    .shop-1,
+    .shop-2,
+    .shop-3 {
+        width: 100%; /* Set width to 100% for full width on smaller screens */
+        margin-bottom: 20px; /* Add some margin between shops for better spacing */
+    }
+
+    .where-to-buy img {
+        width: 100%; /* Make the image take up 100% of its container */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
 footer {
     color: white;
     height: 200px;
